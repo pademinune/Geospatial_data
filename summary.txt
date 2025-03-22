@@ -1,0 +1,32 @@
+With all 3 constraints:
+The program chose 24 polygons.
+Their total carbon storage was approx. 1857, compared to an overall carbon storage of 5605.5
+The optimial solution saw the total cost of 67793 compared to the budget of 140963
+with an area of 2043 out of 8054
+
+With just constraint 1 and 2:
+The program chose 24 polygons
+Their total carbon storage was approx. 1865, compared to an overall carbon storage of 5605.5
+The optimial solution saw the total cost of 63218 compared to the budget of 140963
+With an area of 2005 out of 8054
+
+When the polygons can be adjacent (only constraint 1):
+The program chose 61 polygons.
+Their total carbon storage was approx. 4350.8, compared to an overall carbon storage of 5605.5
+The optimial solution saw the total cost of 140757 compared to the budget of 140963
+
+
+
+Interestingly, the optimal subsets were almost equal in both cases including and not including constraint #3.
+This is probably because constraint #3 bounds their area from below, and the optimal solution already has high area.
+It would be also be interesting to modfiy constraint #3 to bound their total area from above to conserve space, rather than below.
+
+Another observation is that I filtered out 0 polygons (since all of them had area at least 37 km^2).
+
+Furthermore, I was suprised by how little you can maximize the carbon when applying constraint 2.
+
+There is also a bug (probably from PULP) when setting a constraint that the polygon area must be >= 3/4 of the total area.
+Since there are no possible subsets in that case, then it ignores the adjacency constraint.
+
+- Justin Nitoi
+
