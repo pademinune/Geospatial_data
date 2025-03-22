@@ -4,3 +4,5 @@ Reads land_parcel.shp and discovers the optimal subset of polygons based on a fe
 Constraint 1: The total cost of selected polygons must be less that half the total cost of all polygons.
 
 Constraint 2: No 2 selected polygons can share an edge or point.
+
+Constraint 3: The total area of selected polygons must be at least 1/4 the area of all polygons.
