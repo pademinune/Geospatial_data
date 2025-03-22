@@ -8,7 +8,7 @@ Constraint 2: No 2 selected polygons can share an edge or point.
 Constraint 3: The total area of selected polygons must be at least 1/4 the area of all polygons.
 
 # Output
-Run main.c to see the text output.
+Run main.c to see the text output. This output has also been summarized and reported on in summary.txt
 
 The output has also been plotted in 3 graphs:
 
