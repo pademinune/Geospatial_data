@@ -21,6 +21,6 @@ selected_polygons_plot_3.png displays the optimal subset with all (1, 2 and 3) c
 # Setup
 
 - Create a new folder with main.c, and the land_parcel files (ensure they are all in the same folder by taking them out of the terrain_files folder)
-- Install geopandas, pulp with pip: pip install geopandas, pulp
+- Install geopandas, pulp with pip: pip install geopandas pulp
 - Run main.c
   
