@@ -132,22 +132,22 @@ print("DONE")
 
 # plotting the terrain
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 # Create a GeoDataFrame with selected polygons
-selected_gdf = filtered_gdf.iloc[selected_polygons]
+#selected_gdf = filtered_gdf.iloc[selected_polygons]
 
 # Plot the entire filtered GeoDataFrame and then overlay the selected polygons
-fig, ax = plt.subplots(figsize=(10, 10))
-filtered_gdf.plot(ax=ax, color='lightgrey', edgecolor='black')  # Plot all polygons
-selected_gdf.plot(ax=ax, color='green', edgecolor='black')  # Highlight selected polygons in green
+#fig, ax = plt.subplots(figsize=(10, 10))
+#filtered_gdf.plot(ax=ax, color='lightgrey', edgecolor='black')  # Plot all polygons
+#selected_gdf.plot(ax=ax, color='green', edgecolor='black')  # Highlight selected polygons in green
 
 
-plt.title('Selected Polygons')
+#plt.title('Selected Polygons')
 
-plt.savefig("selected_polygons_plot.png", bbox_inches='tight')
+#plt.savefig("selected_polygons_plot.png", bbox_inches='tight')
 
-plt.show()
+#plt.show()
 
 
 
